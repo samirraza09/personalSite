@@ -26,6 +26,15 @@ width: 500px;
 padding: 50px;
 }
 
+.Link {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+.Link:hover {
+    text-decoration: underline;
+}
+
 .Description {
     width: 500px;
 }

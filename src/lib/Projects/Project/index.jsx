@@ -4,8 +4,8 @@ const Project = ({projectConfig}) => (
     <div className="Project">
         <h1>{projectConfig.title}</h1>
         <p className="Description">{projectConfig.description}</p>
-        <a href={projectConfig.github}>{projectConfig.github}</a>
-        <a href={projectConfig.devpost}>{projectConfig.devpost}</a>
+        <a className="Link" href={projectConfig.github}>Github</a>
+        <a className="Link" href={projectConfig.devpost}>Devpost</a>
     </div>
 );
 

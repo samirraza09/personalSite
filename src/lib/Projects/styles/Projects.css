@@ -1,0 +1,6 @@
+.Projects-container {
+    display: flex;
+    overflow-x: auto;
+    min-width: 100%;
+    background-color: #282c34;
+}

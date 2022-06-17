@@ -1,8 +1,7 @@
-import projectsConfig from "./config/projectsConfig";
 import Project from "./Project";
 import "./styles/Projects.css"
 
-const Projects = () => (
+const Projects = ({projectsConfig}) => (
     <div className="Projects-container">
         <h1 className="Projects-title">Projects</h1>
         <div className="Projects-flexbox">

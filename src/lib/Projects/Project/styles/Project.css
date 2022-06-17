@@ -14,16 +14,13 @@ pointer-events: none;
 }
 
 .Project {
-background-color: #282c34;
-height: 500px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: calc(5px + 1vmin);
-color: white;
-width: 500px;
-padding: 50px;
+    background-color: #282c34;
+    height: 100%px;
+    font-size: calc(5px + 1vmin);
+    color: white;
+    width: 500px;
+    padding: 50px;
+    float: left;
 }
 
 .Link {
@@ -50,4 +47,17 @@ from {
 to {
     transform: rotate(360deg);
 }
+}
+
+.Project-container {
+    margin: 0 auto;
+    height: 500px;
+    width: 100%;
+}
+
+.YoutubeEmbed {
+    padding-top: 75px;
+    height: 100%;
+    width: 30%;
+    float: left;
 }

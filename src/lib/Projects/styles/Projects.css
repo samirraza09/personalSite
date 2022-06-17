@@ -1,8 +1,21 @@
 .Projects-container {
-    display: flex;
-    overflow-x: auto;
-    min-width: 100%;
     background-color: #282c34;
     border: #61dafb;
-    border-style: solid;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    text-align: left;
+}
+
+.Projects-flexbox {
+    background-color: #282c34;
+
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    /* just for demo */
+    min-width: 100%;
+}
+
+.Projects-title {
+    padding-left: 50px;
 }

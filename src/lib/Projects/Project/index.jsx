@@ -4,7 +4,7 @@ import YoutubeEmbed from "./YoutubeEmbed";
 const Project = ({projectConfig}) => (
     <div className="Project-container">
         <div className="Project">
-            <h1>{projectConfig.title}</h1>
+            <h1 className="Project-title">{projectConfig.title}</h1>
             <p className="Description">{projectConfig.description}</p>
             <a className="Link" href={projectConfig.github}>Github</a>
         </div>

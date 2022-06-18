@@ -5,7 +5,7 @@ const Header = () => (
         <nav>
             <div className="Header-name">SR</div>
             <div className="Header-links-container">
-                <div className="Header-link">Contact</div>
+                <div className="Header-link">Resume</div>
                 <div className="Header-link">Github</div>
                 <div className="Header-link">LinkedIn</div>
             </div>

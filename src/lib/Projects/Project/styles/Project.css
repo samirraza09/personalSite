@@ -11,7 +11,8 @@
 }
 
 .Link:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
 }
 
 .Description {

@@ -38,7 +38,9 @@ const Footer = () => (
             </a>
         </div>
         <div className="trademark-container">
-            @ 2022 Samir
+            <p className="trademark">
+                @ 2022 Samir Raza
+            </p>
         </div>
     </div>
 );

@@ -2,7 +2,7 @@ import Project from "./Project";
 import "./styles/Projects.css"
 
 const Projects = ({projectsConfig}) => (
-    <div className="Projects-container">
+    <div id="Projects" className="Projects-container">
         <h1 className="Projects-title">Projects</h1>
         <div className="Projects-flexbox">
         {

@@ -14,8 +14,8 @@ const App = () => {
     <Header/>
     <div className="App">
       <AboutMe />
-      <Projects projectsConfig={projectsConfig}/>
-      <WorkExperiences workExperiencesConfig={workExperienceConfig} />
+      <Projects id="Projects" projectsConfig={projectsConfig}/>
+      <WorkExperiences id="WorkExperiences" workExperiencesConfig={workExperienceConfig} />
     </div>
     <Footer/>
   </div>

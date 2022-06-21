@@ -7,7 +7,7 @@ import emailWhiteLogo from "./icons/email-white.png";
 import linkedinWhiteLogo from "./icons/linkedin-white.png";
 
 const Footer = () => (
-    <div className="Footer-container">
+    <div id="Footer" className="Footer-container">
         <div className="Footer-icons">
             <a href="https://github.com/samirraza09">
                 <img 
@@ -38,6 +38,7 @@ const Footer = () => (
             </a>
         </div>
         <div className="trademark-container">
+            <p>778 - 773 - 0607</p>
             <p className="trademark">
                 @ 2022 Samir Raza
             </p>

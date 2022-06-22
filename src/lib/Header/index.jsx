@@ -1,12 +1,13 @@
 import "./styles/Header.css"
 import {Link} from 'react-scroll'
 import HamburgerImage from "./assets/hamburger.png"
-import { useCallback, useState } from "react";
+import HamburgerMenu from "./HamburgerMenu";
+import { useState, useRef } from "react";
 
-const Header = () => {
+const Header = ( {showHamburgerMenu, setShowHamburgerMenu} ) => {
 
-    const renderDropdown = () => (
-        null
+    const handleMenuClick = () => (
+        setShowHamburgerMenu(true)
     );
 
     return (
@@ -27,7 +28,8 @@ const Header = () => {
                     <Link to="Projects" spy={true} smooth={true} className="Header-link" href="">
                         Projects
                     </Link>
-                    <img src={HamburgerImage} alt="" className="Hamburger-menu" onClick={renderDropdown}/>
+                    <a href="" onClick={handleMenuClick}><img src={HamburgerImage} href="" className="Hamburger-menu"/></a>
+                    <HamburgerMenu className="Hamburger-menu" showHamburgerMenu={showHamburgerMenu}/>
                 </div>
             </nav>
     </div>

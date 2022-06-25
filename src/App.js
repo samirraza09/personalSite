@@ -10,11 +10,9 @@ import Footer from './lib/Footer';
 import ScrollButton from './lib/ScrollButton';
 
 const App = () => {
-  const [showHamburgerMenu, setShowHamburgerMenu] = useState();
-
   return (
   <div className="App-container">
-    <Header showHamburgerMenu={showHamburgerMenu} setShowHamburgerMenu={setShowHamburgerMenu}/>
+    <Header />
     <div className="App">
       <AboutMe />
       <Projects id="Projects" projectsConfig={projectsConfig}/>

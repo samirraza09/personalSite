@@ -1,6 +1,6 @@
 .App-header {
     background-color: #282c34;
-    min-height: 100vh;
+    min-height: 90vh;
     align-items: left;
     text-align: left;
     color: white;
@@ -10,7 +10,7 @@
     font-size: 100px;
     text-align: left;
     position: relative;
-    top: 250px;
+    top: 200px;
     margin-left: 50px;
 }
 
@@ -18,7 +18,7 @@
     font-size: 25px;
     color: #61dafb;
     width: 720px;
-    top: 250px;
+    top: 200px;
     position: relative;
     margin-left: 50px;
 }

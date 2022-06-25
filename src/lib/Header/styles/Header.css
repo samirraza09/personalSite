@@ -5,12 +5,14 @@
 }
 
 @media only screen and (min-width: 1250px) {
-    .Hamburger-menu {
+    .Hamburger-image {
+        display: none;
+    }
+
+    .Hamburger-link {
         display: none;
     }
 }
-
-
 
 .Header-container {
     color: white;
@@ -42,9 +44,25 @@
     text-decoration: none;
 }
 
+.Hamburger-menu-link {
+    float: right;
+    padding: 50px 50px 0 50px;
+    width: 50px; 
+}
+
+
+.Hamburger-image {
+    float: right;
+    width: 50px; 
+}
+
+.Hamburger-image:hover {
+    opacity: 70%; 
+}
+
 .Hamburger-menu {
     float: right;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     font-size: 20px;
     text-align: center; 
     color: white;

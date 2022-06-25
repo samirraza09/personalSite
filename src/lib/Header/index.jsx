@@ -1,14 +1,24 @@
-import "./styles/Header.css"
-import {Link} from 'react-scroll'
-import HamburgerImage from "./assets/hamburger.png"
+import "./styles/Header.css";
+import {Link} from 'react-scroll';
+import WhiteHamburgerImage from "./assets/hamburger.png";
 import HamburgerMenu from "./HamburgerMenu";
-import { useState, useRef } from "react";
+import BlueHamburgerImage from "./assets/hamburger-blue.png";
+import { useState } from "react";
 
-const Header = ( {showHamburgerMenu, setShowHamburgerMenu} ) => {
+const Header = () => {
+    const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
+    const [hamburgerImage, setHamburgerImage] = useState(WhiteHamburgerImage)
 
-    const handleMenuClick = () => (
-        setShowHamburgerMenu(true)
-    );
+    const handleMenuClick = (e) => {
+        e.preventDefault();
+        if (showHamburgerMenu === true) {
+            setShowHamburgerMenu(false);
+            setHamburgerImage(WhiteHamburgerImage);
+        } else {
+            setShowHamburgerMenu(true);
+            setHamburgerImage(BlueHamburgerImage);
+        }
+    };
 
     return (
         <div className="Header-container">
@@ -28,7 +38,7 @@ const Header = ( {showHamburgerMenu, setShowHamburgerMenu} ) => {
                     <Link to="Projects" spy={true} smooth={true} className="Header-link" href="">
                         Projects
                     </Link>
-                    <a href="" onClick={handleMenuClick}><img src={HamburgerImage} href="" className="Hamburger-menu"/></a>
+                    <a href="" onClick={handleMenuClick} className="Hamburger-menu-link"><img src={hamburgerImage} href="" className="Hamburger-image"/></a>
                     <HamburgerMenu className="Hamburger-menu" showHamburgerMenu={showHamburgerMenu}/>
                 </div>
             </nav>

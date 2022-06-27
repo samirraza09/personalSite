@@ -1,3 +1,14 @@
+[data-theme="dark"] {
+    --text-colour: white;
+    --link-hover-colour: #61dafb;
+}
+  
+  /* 2 */
+[data-theme="light"] {
+    --text-colour: #16181d;
+    --link-hover-colour: #007b9d;
+}
+
 @media only screen and (max-width: 1250px) {
     .Header-link {
         display: none;
@@ -15,7 +26,7 @@
 }
 
 .Header-container {
-    color: white;
+    color: var(--text-colour);
     height: 100px;
     flex-flow: nowrap;
     justify-content: flex-start;
@@ -27,12 +38,12 @@
     float: left;
     padding: 50px;
     font-size: 20px;
-    color: white;
+    color: var(--text-colour);
     text-decoration: none;
 }
 
 .Header-name:hover {
-    color: #61dafb;
+    color: var(--link-hover-colour);
 }
 
 .Header-link {
@@ -40,7 +51,7 @@
     padding: 50px;
     font-size: 20px;
     text-align: center; 
-    color: white;
+    color: var(--text-colour);
     text-decoration: none;
 }
 
@@ -65,11 +76,11 @@
     padding: 50px 50px 0 50px;
     font-size: 20px;
     text-align: center; 
-    color: white;
+    color: var(--text-colour);
     text-decoration: none;
     width: 50px; 
 }
 
 .Header-link:hover {
-    color: #61dafb;
+    color: var(--link-hover-colour);
 }

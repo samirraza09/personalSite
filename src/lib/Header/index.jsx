@@ -3,6 +3,8 @@ import {Link} from 'react-scroll';
 import WhiteHamburgerImage from "./assets/hamburger.png";
 import HamburgerMenu from "./HamburgerMenu";
 import BlueHamburgerImage from "./assets/hamburger-blue.png";
+import BlackHamburgerImage from "./assets/hamburger-black.png";
+import TurquoisHamburgerImage from "./assets/hamburger-turquois.png";
 import { useState } from "react";
 
 const Header = () => {
@@ -13,17 +15,46 @@ const Header = () => {
         e.preventDefault();
         if (showHamburgerMenu === true) {
             setShowHamburgerMenu(false);
-            setHamburgerImage(WhiteHamburgerImage);
+            if (localStorage.theme === "dark") {
+                setHamburgerImage(WhiteHamburgerImage);
+            } else {
+                setHamburgerImage(BlackHamburgerImage);
+            }
         } else {
             setShowHamburgerMenu(true);
-            setHamburgerImage(BlueHamburgerImage);
+            if (localStorage.theme === "dark") {
+                setHamburgerImage(BlueHamburgerImage);
+            } else {
+                setHamburgerImage(TurquoisHamburgerImage);
+            }
         }
     };
+
+    const handleLogoClick = (e) => {
+        e.preventDefault();
+        if (localStorage.theme === "light") {
+            localStorage.setItem("theme", "dark");
+            document.documentElement.setAttribute("data-theme", "dark");
+            if (showHamburgerMenu) { 
+                setHamburgerImage(BlueHamburgerImage) 
+            } else {
+                setHamburgerImage(WhiteHamburgerImage);
+            }
+        } else {
+            localStorage.setItem("theme", "light");
+            document.documentElement.setAttribute("data-theme", "light");
+            if (showHamburgerMenu) { 
+                setHamburgerImage(TurquoisHamburgerImage) 
+            } else {
+                setHamburgerImage(BlackHamburgerImage);
+            }
+        }
+    }
 
     return (
         <div className="Header-container">
             <nav>
-                <a className="Header-name" href="">SR</a>
+                <a className="Header-name" href="" onClick={handleLogoClick}>SR</a>
                 <div className="Header-links-container">
                     <a href="https://firebasestorage.googleapis.com/v0/b/site-c9851.appspot.com/o/samirrazaresume.pdf?alt=media&token=b341af14-800e-4baa-b403-9f5f8290b852" target="_blank" rel="noopener noreferrer" className="Header-link">
                         Resume

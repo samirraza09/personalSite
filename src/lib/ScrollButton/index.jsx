@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
-import Arrow from "./assets/arrow.png"
-import "./styles/ScrollButton.css"
-import ArrowWhite from "./assets/arrow-white.png"
+import ArrowBlue from "./assets/arrow.png";
+import "./styles/ScrollButton.css";
+import ArrowWhite from "./assets/arrow-white.png";
+import ArrowTurquois from "./assets/arrow-turq.png";
+import ArrowBlack from "./assets/arrow-black.png";
 
 const ScrollButton = () =>{
 
@@ -15,14 +17,21 @@ const ScrollButton = () =>{
 	    else if (scrolled <= 300){
 	        setVisible(false)
 	    }
-};
+    };
+    let Arrow = ArrowBlue;
+    let HoverArrow = ArrowWhite;
+    if (localStorage.theme === "light") {
+        Arrow = ArrowTurquois;
+        HoverArrow = ArrowBlack;
+    } else {
+        Arrow = ArrowBlue;
+        HoverArrow = ArrowWhite;
+    }
 
     const scrollToTop = () =>{
         window.scrollTo({
         top: 0,
         behavior: 'smooth'
-        /* you can also use 'auto' behaviour
-            in place of 'smooth' */
         });
     };
 
@@ -34,7 +43,7 @@ const ScrollButton = () =>{
             src={Arrow} 
             onClick={scrollToTop} 
             style={{display: visible ? 'inline' : 'none'}}
-            onMouseOver={e => (e.currentTarget.src = ArrowWhite)}
+            onMouseOver={e => (e.currentTarget.src = HoverArrow)}
             onMouseOut={e => (e.currentTarget.src = Arrow)} 
             />
     );

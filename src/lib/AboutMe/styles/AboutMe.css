@@ -1,9 +1,20 @@
+[data-theme="dark"] {
+    --header-color: white;
+    --text-color: #61dafb;
+}   
+
+/* 2 */
+[data-theme="light"] {
+    --header-color: #16181d;
+    --text-color: #007b9d;
+}
+  
+
 .App-header {
-    background-color: #282c34;
     min-height: 90vh;
     align-items: left;
     text-align: left;
-    color: white;
+    color: var(--header-color);
 }
 
 .Name {
@@ -16,7 +27,7 @@
 
 .Introduction {
     font-size: 25px;
-    color: #61dafb;
+    color: var(--text-color);
     width: 720px;
     top: 200px;
     position: relative;

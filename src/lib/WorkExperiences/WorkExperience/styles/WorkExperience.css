@@ -1,9 +1,23 @@
+[data-theme="dark"] {
+    --paragraph-color: white;
+    --company-color: #959595;
+    --position-color: #61dafb;
+    --link-color-hover: white;
+}   
+
+/* 2 */
+[data-theme="light"] {
+    --paragraph-color: #16181d;
+    --company-color: #4d4d4d;
+    --position-color: #007b9d;
+    --link-color-hover: #16181d;
+}
+
 .WorkExperience-container {
-    color: white;
     padding-top: 50px;
-    color: #959595;
+    color: var(--company-color);
 }
 
 .WorkExperience-position {
-    color: #61dafb;
+    color: var(--position-color);
 }

@@ -10,6 +10,10 @@ import Footer from './lib/Footer';
 import ScrollButton from './lib/ScrollButton';
 
 const App = () => {
+
+  localStorage.setItem("theme", "dark");
+  document.documentElement.setAttribute("data-theme", "dark");
+  
   return (
   <div className="App-container">
     <Header />

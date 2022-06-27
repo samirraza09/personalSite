@@ -1,28 +1,43 @@
+[data-theme="dark"] {
+    --paragraph-color: white;
+    --project-title-color: #959595;
+    --link-color: #61dafb;
+    --link-color-hover: white;
+}   
+
+/* 2 */
+[data-theme="light"] {
+    --paragraph-color: #16181d;
+    --project-title-color: #4d4d4d;
+    --link-color: #007b9d;
+    --link-color-hover: #16181d;
+}
+
 .Project {
     height: 100%;
-    color: white;
+    color: var(--paragraph-color);
     width: 500px;
     float: left;
 }
 
 .Link {
-    color: #61dafb;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .YoutubeLink {
-    color: #61dafb;
+    color: var(--link-color);
     text-decoration: none;
 }
 
 .Link:hover {
     text-decoration: none;
-    color: white;
+    color: var(--link-color-hover);
 }
 
 .YoutubeLink:hover {
     text-decoration: none;
-    color: white;
+    color: var(--link-color-hover);
 }
 
 .Description {
@@ -57,5 +72,5 @@
 }
 
 .Project-title {
-    color: #959595;
+    color: var(--project-title-color);
 }

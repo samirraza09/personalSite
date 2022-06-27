@@ -1,16 +1,27 @@
+[data-theme="dark"] {
+  --background-color: #16181d;
+}
+
+/* 2 */
+[data-theme="light"] {
+  --background-color: rgb(247, 247, 247);
+}
+
 .App-container {
-  background-color: #282c34;
   width: 100%;
   height: 100%;
 }
 
 .App {
   text-align: center;
-  background-color: #282c34;
   height: 100%;
   margin-top: 200px;
   margin-left: 100px;
   margin-right: 100px;
   display: flex;
   flex-direction: column;
+}
+
+body {
+  background-color: var(--background-color);
 }

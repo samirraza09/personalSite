@@ -8,7 +8,6 @@
     --header-color: #16181d;
     --text-color: #007b9d;
 }
-  
 
 .App-header {
     min-height: 90vh;
@@ -25,13 +24,26 @@
     margin-left: 50px;
 }
 
-.Introduction {
-    font-size: 25px;
-    color: var(--text-color);
-    width: 720px;
-    top: 200px;
-    position: relative;
-    margin-left: 50px;
+@media  only screen and (max-width: 1025px) {
+    .Introduction {
+        font-size: 25px;
+        color: var(--text-color);
+        width: 100%;
+        top: 200px;
+        position: relative;
+        margin-left: 50px;
+    }
+}
+
+@media  only screen and (min-width: 1025px) {
+    .Introduction {
+        font-size: 25px;
+        color: var(--text-color);
+        width: 720px;
+        top: 200px;
+        position: relative;
+        margin-left: 50px;
+    }
 }
 
 .wave {

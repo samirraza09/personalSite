@@ -30,3 +30,15 @@
 .trademark {
     color: var(--trademark-color)
 }
+
+@media  (pointer:coarse) {
+    .icon {
+        width: 50px;
+        padding: 25px;
+    }
+    .Footer-container {
+        height: 250px;
+        text-align: center;
+    }
+}
+  

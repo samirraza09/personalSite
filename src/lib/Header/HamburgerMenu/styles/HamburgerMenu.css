@@ -21,24 +21,21 @@
     }
 }
 
-@media only screen and (max-width: 1025px) {
+.Hamburger-links-container {
+    position: absolute;
+    top: 110px;
+    text-align: right;
+    right: 150px;
+    overflow: hidden;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center
+}
+@media (pointer:coarse) {
     .Hamburger-links-container {
         position: absolute;
         top: 110px;
         text-align: right;
         right: 50px;
-        overflow: hidden;
-        animation: growDown 300ms ease-in-out forwards;
-        transform-origin: top center
-    }
-}
-
-@media only screen and (min-width: 1025px) {
-    .Hamburger-links-container {
-        position: absolute;
-        top: 110px;
-        text-align: right;
-        right: 150px;
         overflow: hidden;
         animation: growDown 300ms ease-in-out forwards;
         transform-origin: top center

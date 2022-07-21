@@ -74,3 +74,19 @@
 .Project-title {
     color: var(--project-title-color);
 }
+
+@media  (pointer:coarse) {
+    .Project-container {
+        height: auto;
+    }
+    .Project {
+        height: auto;
+        width: 100%;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    .Description {
+        width: 100%;
+        font-size: 20px;
+    }
+}

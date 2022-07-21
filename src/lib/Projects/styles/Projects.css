@@ -25,3 +25,9 @@
     font-size: 50px;
     padding-bottom: 50px;
 }
+
+@media  (pointer:coarse) {
+    .Projects-container {
+        margin-left: 0px;
+    }
+}

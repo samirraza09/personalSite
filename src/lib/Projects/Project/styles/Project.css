@@ -23,11 +23,13 @@
 .Link {
     color: var(--link-color);
     text-decoration: none;
+    font-size: 20px;
 }
 
 .YoutubeLink {
     color: var(--link-color);
     text-decoration: none;
+    font-size: 20px;
 }
 
 .Link:hover {
@@ -59,13 +61,13 @@ a:hover {
     width: 100%;
 }
 
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 1175px) {
     .YoutubeEmbed {
         display: none;
     }
 }
 
-@media only screen and (min-width: 1026px) {
+@media only screen and (min-width: 1175px) {
     .YoutubeLink {
         display: none;
     }
@@ -73,7 +75,7 @@ a:hover {
 
 .YoutubeEmbed {
     height: 100%;
-    width: 30%;
+    width: 400px;
     float: left;
     position: relative;
     left: 100px;
@@ -99,3 +101,4 @@ a:hover {
         font-size: 20px;
     }
 }
+

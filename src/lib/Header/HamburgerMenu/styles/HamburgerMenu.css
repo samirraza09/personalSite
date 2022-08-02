@@ -1,12 +1,12 @@
 [data-theme="dark"] {
-    --text-colour: white;
-    --link-hover-colour: #61dafb;
+    --text-colour: #61dafb;
+    --link-hover-colour: white;
 }
   
   /* 2 */
 [data-theme="light"] {
-    --text-colour: #16181d;
-    --link-hover-colour: #007b9d;
+    --text-colour: #007b9d;
+    --link-hover-colour: #16181d;
 }
 
 @keyframes growDown {

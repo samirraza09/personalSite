@@ -45,6 +45,15 @@
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+a:hover {
+    color: var(--link-color-hover);
+}
+
 .Project-container {
     height: 500px;
     width: 100%;

@@ -38,7 +38,7 @@ const Footer = () => (
             </a>
         </div>
         <div className="trademark-container">
-            <p>778 - 773 - 0607</p>
+            <p>+1 778 - 773 - 0607</p>
             <p className="trademark">
                 @ 2022 Samir Raza
             </p>

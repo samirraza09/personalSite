@@ -1,24 +1,33 @@
 [data-theme="dark"] {
     --paragraph-color: white;
-    --company-color: #959595;
-    --position-color: #61dafb;
+    --company-color: #61dafb;
+    --position-color: #959595;
     --link-color-hover: white;
 }   
 
 /* 2 */
 [data-theme="light"] {
     --paragraph-color: #16181d;
-    --company-color: #4d4d4d;
-    --position-color: #007b9d;
+    --company-color: #007b9d;
+    --position-color: #4d4d4d;
     --link-color-hover: #16181d;
 }
 
 .WorkExperience-container {
     padding-top: 50px;
-    color: var(--company-color);
 }
 
 .WorkExperience-position {
     color: var(--position-color);
+}
+
+.WorkExperience-company-link {
+    text-decoration: none;
+    color: var(--company-color);
+}
+
+.WorkExperience-company-link:hover {
+    text-decoration: none;
+    color: var(--link-color-hover);
 }
 

@@ -9,23 +9,23 @@ import { useState } from "react";
 
 const Header = () => {
     const [showHamburgerMenu, setShowHamburgerMenu] = useState(false);
-    const [hamburgerImage, setHamburgerImage] = useState(WhiteHamburgerImage)
+    const [hamburgerImage, setHamburgerImage] = useState(BlueHamburgerImage)
 
     const handleMenuClick = (e) => {
         e.preventDefault();
         if (showHamburgerMenu === true) {
             setShowHamburgerMenu(false);
             if (localStorage.theme === "dark") {
-                setHamburgerImage(WhiteHamburgerImage);
+                setHamburgerImage(BlueHamburgerImage);
             } else {
-                setHamburgerImage(BlackHamburgerImage);
+                setHamburgerImage(TurquoisHamburgerImage);
             }
         } else {
             setShowHamburgerMenu(true);
             if (localStorage.theme === "dark") {
-                setHamburgerImage(BlueHamburgerImage);
+                setHamburgerImage(WhiteHamburgerImage);
             } else {
-                setHamburgerImage(TurquoisHamburgerImage);
+                setHamburgerImage(BlackHamburgerImage);
             }
         }
     };
@@ -36,17 +36,17 @@ const Header = () => {
             localStorage.setItem("theme", "dark");
             document.documentElement.setAttribute("data-theme", "dark");
             if (showHamburgerMenu) { 
-                setHamburgerImage(BlueHamburgerImage) 
+                setHamburgerImage(WhiteHamburgerImage) 
             } else {
-                setHamburgerImage(WhiteHamburgerImage);
+                setHamburgerImage(BlueHamburgerImage);
             }
         } else {
             localStorage.setItem("theme", "light");
             document.documentElement.setAttribute("data-theme", "light");
             if (showHamburgerMenu) { 
-                setHamburgerImage(TurquoisHamburgerImage) 
+                setHamburgerImage(BlackHamburgerImage) 
             } else {
-                setHamburgerImage(BlackHamburgerImage);
+                setHamburgerImage(TurquoisHamburgerImage);
             }
         }
     }

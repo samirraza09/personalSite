@@ -30,11 +30,13 @@
 @media  (pointer:coarse) {
     .Projects-container {
         margin-left: 0px;
+        margin-right: 12.5px;
     }
 }
 
 @media only screen and (max-width: 1175px) {
     .Projects-container {
         margin-left: 0px;
+        margin-right: 12.5px;
     }
 }

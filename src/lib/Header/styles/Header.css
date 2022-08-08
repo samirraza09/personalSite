@@ -9,13 +9,13 @@
     --link-hover-colour: #16181d;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1500px) {
     .Header-link {
         display: none;
     }
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1500px) {
     .Hamburger-image {
         display: none;
     }
@@ -33,6 +33,7 @@
     justify-content: flex-start;
     margin-right: 250px;
     margin-left: 250px;
+    font-weight: 500;
 }
 .Hamburger-image:hover {
     opacity: 70%; 
@@ -99,4 +100,10 @@
 
 .Header-link:hover {
     color: var(--link-hover-colour);
+}
+
+@media  (pointer:coarse) {
+    .Hamburger-image {
+        width: 35px; 
+    }
 }

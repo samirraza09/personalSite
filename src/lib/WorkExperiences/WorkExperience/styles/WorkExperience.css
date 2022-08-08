@@ -38,3 +38,9 @@
     color: var(--link-color-hover);
 }
 
+@media  (pointer:coarse) {
+    .WorkExperience-container {
+        padding: 25px;
+        margin-bottom: 50px;
+    }
+}

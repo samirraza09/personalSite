@@ -31,8 +31,8 @@
     height: 100px;
     flex-flow: nowrap;
     justify-content: flex-start;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 250px;
+    margin-left: 250px;
 }
 .Hamburger-image:hover {
     opacity: 70%; 

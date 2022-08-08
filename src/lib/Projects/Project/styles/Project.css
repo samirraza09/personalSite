@@ -3,6 +3,7 @@
     --project-title-color: #959595;
     --link-color: #61dafb;
     --link-color-hover: white;
+    --p-background-color: #141d26;
 }   
 
 /* 2 */
@@ -11,13 +12,7 @@
     --project-title-color: #4d4d4d;
     --link-color: #007b9d;
     --link-color-hover: #16181d;
-}
-
-.Project {
-    height: 100%;
-    color: var(--paragraph-color);
-    width: 500px;
-    float: left;
+    --p-background-color: #bdeaf6;
 }
 
 .Link {
@@ -56,34 +51,48 @@ a:hover {
     color: var(--link-color-hover);
 }
 
-.Project-container {
-    height: 500px;
-    width: 100%;
-}
-
-@media only screen and (max-width: 1175px) {
+@media only screen and (max-width: 1450px) {
     .YoutubeEmbed {
         display: none;
     }
 }
 
-@media only screen and (min-width: 1175px) {
+@media only screen and (min-width: 1450px) {
     .YoutubeLink {
         display: none;
     }
 }
 
-.YoutubeEmbed {
-    height: 100%;
-    width: 400px;
-    float: left;
-    position: relative;
-    left: 100px;
-    top: 10px;
-}
-
 .Project-title {
     color: var(--project-title-color);
+}
+
+.Project-container {
+    height: auto;
+    width: 90%;
+    background-color: var(--p-background-color);
+    margin-bottom: 100px;
+    margin-right: 10%;
+    padding: 50px;
+    display: flex;
+}
+
+.Project {
+    height: auto;
+    color: var(--paragraph-color);
+    width: 500px;
+    text-align: left;
+    flex: 1;
+    padding-right: calc(10% - 55px);
+    padding-left: calc(10% - 55px);
+}
+
+.YoutubeEmbed {
+    flex: 1;
+    width: 500px;
+    padding-left: calc(10% - 55px);
+    padding-right: calc(10% - 55px);
+    margin: auto;
 }
 
 @media  (pointer:coarse) {

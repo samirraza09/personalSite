@@ -14,3 +14,10 @@
       font-size: 1rem;
    }
 }
+
+@media only screen and (max-width: 1175px) {
+   .Scroll {
+      right: 10px;
+      font-size: 1rem;
+   }
+}

@@ -22,10 +22,22 @@
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
-    min-width: 100%;
 }
 
 @media  (pointer:coarse) {
+  .WorkExperiences-container {
+    margin-left: 0;
+    padding-bottom: 200px;
+  }
+  .WorkExperiences-flexbox {
+    text-align: left;
+    -ms-text-justify: none;
+    text-justify: none;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
   .WorkExperiences-container {
     margin-left: 0;
     padding-bottom: 200px;

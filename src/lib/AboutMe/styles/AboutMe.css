@@ -64,6 +64,30 @@
         margin-left: 0px;
     }
 }
+
+@media only screen and (max-width: 1175px) {
+    .Introduction {
+        font-size: 20px;
+        color: var(--text-color);
+        width: 100%;
+        top: 50px;
+        position: relative;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+
+    .wave {
+        font-size: 60px;
+    }
+
+    .Name {
+        font-size: 75px;
+        position: relative;
+        top: 75px;
+        margin-left: 0px;
+    }
+ }
+ 
   
 @keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }

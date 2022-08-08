@@ -34,6 +34,18 @@
   }
 }
 
+@media only screen and (max-width: 1175px) {
+  .App {
+    text-align: center;
+    height: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 
 body {
   background-image: var(--background-image)

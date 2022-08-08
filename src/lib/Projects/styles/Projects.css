@@ -12,6 +12,7 @@
     text-align: left;
     height: 100%;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .Description {
@@ -27,6 +28,12 @@
 }
 
 @media  (pointer:coarse) {
+    .Projects-container {
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
     .Projects-container {
         margin-left: 0px;
     }

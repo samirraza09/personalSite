@@ -3,7 +3,7 @@ const workExperienceConfig = {
         {
             company: 'Intuit',
             companyUrl: 'https://www.intuit.com/',
-            position: 'Software Developer Co-op: Quickbooks Online Sign-in',
+            position: 'Software Developer Co-op: Quickbooks Online Sign-up',
         },
         {
             company: 'The Answer Company',

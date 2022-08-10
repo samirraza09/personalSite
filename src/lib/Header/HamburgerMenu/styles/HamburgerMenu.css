@@ -25,7 +25,7 @@
     position: absolute;
     top: 110px;
     text-align: right;
-    right: 150px;
+    right: 50px;
     overflow: hidden;
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center

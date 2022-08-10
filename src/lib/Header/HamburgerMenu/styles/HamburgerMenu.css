@@ -25,10 +25,22 @@
     position: absolute;
     top: 110px;
     text-align: right;
-    right: 50px;
+    right: 300px;
     overflow: hidden;
     animation: growDown 300ms ease-in-out forwards;
     transform-origin: top center
+}
+
+@media only screen and (max-width: 1175px) {
+    .Hamburger-links-container {
+        position: absolute;
+        top: 110px;
+        text-align: right;
+        right: 50px;
+        overflow: hidden;
+        animation: growDown 300ms ease-in-out forwards;
+        transform-origin: top center
+    }
 }
 @media (pointer:coarse) {
     .Hamburger-links-container {
@@ -58,7 +70,7 @@
     color: var(--link-hover-colour);
 }
 
-@media only screen and (min-width: 1250px) {
+@media only screen and (min-width: 1500px) {
     .Hamburger-link {
         display: none;
     }

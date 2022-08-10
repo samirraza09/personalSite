@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/personalSite/static/css/main.e089e335.css",
-    "main.js": "/personalSite/static/js/main.7dee684e.js",
-    "static/js/787.3ba5e41c.chunk.js": "/personalSite/static/js/787.3ba5e41c.chunk.js",
-    "static/media/lightBackground.svg": "/personalSite/static/media/lightBackground.092b183f712be0731d6a.svg",
-    "static/media/darkBackground.svg": "/personalSite/static/media/darkBackground.4cd368308e5729a41fff.svg",
-    "static/media/github.png": "/personalSite/static/media/github.7df190ee2d62bb6a767d.png",
-    "static/media/linkedin.png": "/personalSite/static/media/linkedin.bfdd3ff7080c315482a0.png",
-    "static/media/github-white.png": "/personalSite/static/media/github-white.e49d6000b286f21eaf88.png",
-    "index.html": "/personalSite/index.html",
-    "main.e089e335.css.map": "/personalSite/static/css/main.e089e335.css.map",
-    "main.7dee684e.js.map": "/personalSite/static/js/main.7dee684e.js.map",
-    "787.3ba5e41c.chunk.js.map": "/personalSite/static/js/787.3ba5e41c.chunk.js.map"
+    "main.css": "/static/css/main.fec00bff.css",
+    "main.js": "/static/js/main.d1f2fa05.js",
+    "static/js/787.3ba5e41c.chunk.js": "/static/js/787.3ba5e41c.chunk.js",
+    "static/media/lightBackground.svg": "/static/media/lightBackground.092b183f712be0731d6a.svg",
+    "static/media/darkBackground.svg": "/static/media/darkBackground.4cd368308e5729a41fff.svg",
+    "static/media/github.png": "/static/media/github.7df190ee2d62bb6a767d.png",
+    "static/media/linkedin.png": "/static/media/linkedin.bfdd3ff7080c315482a0.png",
+    "static/media/github-white.png": "/static/media/github-white.e49d6000b286f21eaf88.png",
+    "index.html": "/index.html",
+    "main.fec00bff.css.map": "/static/css/main.fec00bff.css.map",
+    "main.d1f2fa05.js.map": "/static/js/main.d1f2fa05.js.map",
+    "787.3ba5e41c.chunk.js.map": "/static/js/787.3ba5e41c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e089e335.css",
-    "static/js/main.7dee684e.js"
+    "static/css/main.fec00bff.css",
+    "static/js/main.d1f2fa05.js"
   ]
 }

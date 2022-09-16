@@ -1,3 +1,7 @@
+Personal Website to demonstrate my personal projects and past work experience.
+
+Frontend built with React and stored content on a Firebase backend.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

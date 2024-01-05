@@ -1,5 +1,4 @@
 import "./styles/Project.css"
-import YoutubeEmbed from "./YoutubeEmbed";
 
 const Project = ({projectConfig}) => {
     return (
@@ -9,10 +8,9 @@ const Project = ({projectConfig}) => {
                 <p className="Description"><projectConfig.description/></p>
                 <a className="Link" href={projectConfig.github}>GitHub</a>
                 <br />
-                <a className="YoutubeLink" href={projectConfig.youtubeLink}>Video Demonstration</a>
             </div>
-            <div className="YoutubeEmbed">
-                <YoutubeEmbed embedId={projectConfig.youtubeEmbed}/>
+            <div className="ImageContainer">
+                <img className="Project-image" src={projectConfig.image} alt="project-image"/>
             </div>
         </div>
     )

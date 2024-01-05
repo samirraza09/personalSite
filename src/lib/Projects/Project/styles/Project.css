@@ -21,18 +21,7 @@
     font-size: 20px;
 }
 
-.YoutubeLink {
-    color: var(--link-color);
-    text-decoration: none;
-    font-size: 20px;
-}
-
 .Link:hover {
-    text-decoration: none;
-    color: var(--link-color-hover);
-}
-
-.YoutubeLink:hover {
     text-decoration: none;
     color: var(--link-color-hover);
 }
@@ -47,18 +36,29 @@ a {
     color: var(--link-color);
 }
 
+.Project-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a:hover {
     color: var(--link-color-hover);
 }
 
-@media only screen and (max-width: 1450px) {
-    .YoutubeEmbed {
-        display: none;
+@media only screen and (max-width: 1900px) {
+
+    .Project-image {
+        width: 90%;
     }
 }
 
-@media only screen and (min-width: 1450px) {
-    .YoutubeLink {
+@media only screen and (max-width: 1450px) {
+    .ImageContainer {
+        display: none;
+    }
+
+    .Project-image {
         display: none;
     }
 }
@@ -87,11 +87,9 @@ a:hover {
     padding-left: calc(10% - 55px);
 }
 
-.YoutubeEmbed {
+.ImageContainer {
     flex: 1;
     width: 500px;
-    padding-left: calc(10% - 55px);
-    padding-right: calc(10% - 55px);
     margin: auto;
 }
 

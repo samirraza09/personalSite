@@ -8,6 +8,7 @@ const WorkExperience = ({workExperience}) => (
             </a>
         </h1>
         <h2 className="WorkExperience-position">{workExperience.position}</h2>
+        <h2 className="WorkExperience-year">{workExperience.year}</h2>
     </div>
 )
 

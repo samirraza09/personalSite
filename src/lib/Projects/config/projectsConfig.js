@@ -1,3 +1,7 @@
+import ashe from '../assets/ashe.png'
+import opgg from '../assets/opgg.png'
+import hockeystats from '../assets/hockeystats.png'
+
 const projectsConfig = {
     projects: [
         {
@@ -8,6 +12,7 @@ const projectsConfig = {
             github: 'https://github.com/samirraza09/op.ggScraper/',
             youtubeEmbed: '6UUj89b666E',
             youtubeLink: 'https://www.youtube.com/watch?v=6UUj89b666E&ab_channel=SamirRaza',
+            image: opgg
         },
         {
             title: 'Ashe V Lucian',
@@ -18,6 +23,7 @@ const projectsConfig = {
             github: 'https://github.com/samirraza09/HackED2021Proj',
             youtubeEmbed: 'Udw2xeaAo6U',
             youtubeLink: 'https://www.youtube.com/watch?v=Udw2xeaAo6U&ab_channel=SamirRaza',
+            image: ashe
         },
         {
             title: 'Hockey Statistics Analyzer',
@@ -27,7 +33,7 @@ const projectsConfig = {
             ),
             github: 'https://github.com/samirraza09/HackED',
             youtubeEmbed: 's0EOcoGkq10',
-            youtubeLink: 'https://www.youtube.com/watch?v=s0EOcoGkq10&ab_channel=SamirRaza',
+            image: hockeystats,
         },
         
     ]
